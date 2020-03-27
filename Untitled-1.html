@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     let alfa=["a", "b","c"],
+         alfa2=["d", "e", "f"],
+         grupoA,
+         grupoB,
+         Inverso;
+
+    grupoA=alfa.concat(alfa2);
+    document.write(grupoA + "<br>")
+        //unir dos arreglos
+
+    grupoA.pop()
+    document.write(grupoA+ "<br>")
+        //quita el ultimo elemento del arreglo
+
+    grupoB=grupoA.join("-")
+    document.write(grupoB+ "<br>")
+        //unir elementos del arreglo con el caracter especificado
+
+
+    grupoA.push("g")
+    document.write(grupoA+ "<br>")
+        //push agrega un elemento al final del arreglo
+
+    grupoA.shift()
+    document.write(grupoA+ "<br>")
+        //quitar el primer elemento
+    
+    grupoA.unshift("z")
+    document.write(grupoA+ "<br>")
+        //pone el primer elemento
+
+    Inverso=grupoA.reverse()
+    document.write(grupoA+ "<br>")
+        //invierte el orden del arreglo
+
+    let grupoC= grupoA.slice(1,2)
+    document.write(grupoC+ "<br>")
+
+    </script>
+</body>
+</html>

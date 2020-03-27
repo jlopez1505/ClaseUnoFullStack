@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function sinCero() {
+        let numeros, numerosArreglo =[], validar, arreglo=[];
+
+        do {
+
+            numeros = prompt("Ingrese un número")
+            numerosArreglo.push(numeros)
+            validar = prompt("¿Desea agregar otro numero? Y/N")
+            Console.log(numerosArreglo)
+            
+        } while (validar=="y");
+
+        for (let index = 0; index < numerosArreglo.length; index++) {
+            
+          if (numerosArreglo[index] != 0) {
+            arreglo.push(numerosArreglo[index])
+          }
+          Console.log(arreglo)
+        }   
+        document.write(arreglo)
+    }
+    function punto2() {
+        let entrada, arregloDividido=[], letras=[], numeros=[];
+
+        entrada = prompt("ingrese los valores separados por comas")
+        
+        arregloDividido = entrada.split(",")    
+
+        for (let index = 0; index < arregloDividido.length; index++) {
+            
+            if (isNaN(arregloDividido[index])){
+
+                numeros.push(arregloDividido[index])
+            }
+            else{
+
+                letras.push(arregloDividido[index])
+            }
+        }    
+        document.write(letras.sort()+numeros.sort())
+    }
+    punto2()
+
+    </script>
+</body>
+</html>
